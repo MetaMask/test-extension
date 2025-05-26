@@ -16,6 +16,7 @@
     "prettier-plugin-packagejson",
     "process",
     "ts-loader",
+    "ts-node",
     "typescript",
     "typescript-eslint",
     "webpack-cli"
