@@ -7,15 +7,17 @@
     "@metamask/eslint-config-*",
     "@types/*",
     "@typescript-eslint/utils",
-    "@vitest/coverage-istanbul",
-    "@vitest/eslint-plugin",
     "@yarnpkg/types",
+    "buffer",
+    "copy-webpack-plugin",
     "eslint-config-*",
     "eslint-import-resolver-typescript",
     "eslint-plugin-*",
     "prettier-plugin-packagejson",
-    "ts-node",
+    "process",
+    "ts-loader",
+    "typescript",
     "typescript-eslint",
-    "vite"
+    "webpack-cli"
   ]
 }

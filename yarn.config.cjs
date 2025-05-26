@@ -256,18 +256,9 @@ module.exports = defineConfig({
     // The package must specify the expected minimum Node versions
     workspace.set('engines.node', '^18.20 || ^20.17 || >=22');
 
-    // The package must provide the location of the CommonJS-compatible
-    // entrypoint and its matching type declaration file.
-    workspace.set('main', './dist/index.cjs');
-    workspace.set('exports["."].require.default', './dist/index.cjs');
-    workspace.set('types', './dist/index.d.cts');
-    workspace.set('exports["."].require.types', './dist/index.d.cts');
-
-    // The package must provide the location of the ESM-compatible JavaScript
-    // entrypoint and its matching type declaration file.
-    workspace.set('module', './dist/index.mjs');
-    workspace.set('exports["."].import.default', './dist/index.mjs');
-    workspace.set('exports["."].import.types', './dist/index.d.mts');
+    // Set main export to warning about not importing this package
+    workspace.set('main', './index.js');
+    workspace.set('exports["."]', './index.js');
 
     // The package must export a `package.json` file.
     workspace.set('exports["./package.json"]', './package.json');

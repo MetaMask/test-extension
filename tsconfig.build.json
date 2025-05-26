@@ -3,14 +3,13 @@
   "compilerOptions": {
     "declaration": true,
     "declarationMap": true,
-    "emitDeclarationOnly": true,
     "inlineSources": true,
     "noEmit": false,
     "outDir": "dist",
     "rootDir": "src",
     "sourceMap": true
   },
-  "include": ["./src/**/*.ts"],
+  "include": ["./src/**/*.ts", "./types/**/*.d.ts"],
   "exclude": [
     "./src/**/__fixtures__/**/*",
     "./src/**/__mocks__/**/*",

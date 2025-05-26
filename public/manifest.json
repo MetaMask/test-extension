@@ -1,0 +1,18 @@
+{
+  "author": "https://metamask.io",
+  "background": {
+    "preferred_environment": ["document"],
+    "scripts": ["background.js"],
+    "service_worker": "service-worker.js"
+  },
+  "description": "Test browser extension",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "MetaMask Test Extension"
+  },
+  "name": "Test browser extension",
+  "permissions": [],
+  "short_name": "Test browser extension",
+  "minimum_chrome_version": "109",
+  "version": "1.0.0"
+}

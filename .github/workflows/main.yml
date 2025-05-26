@@ -34,9 +34,9 @@ jobs:
       SECURITY_SCAN_METRICS_TOKEN: ${{ secrets.SECURITY_SCAN_METRICS_TOKEN }}
       APPSEC_BOT_SLACK_WEBHOOK: ${{ secrets.APPSEC_BOT_SLACK_WEBHOOK }}
 
-  build-lint-test:
-    name: Build, lint, and test
-    uses: ./.github/workflows/build-lint-test.yml
+  build-lint:
+    name: Build and Lint
+    uses: ./.github/workflows/build-lint.yml
 
   all-jobs-completed:
     name: All jobs completed
@@ -44,7 +44,7 @@ jobs:
     needs:
       - check-workflows
       - analyse-code
-      - build-lint-test
+      - build-lint
     outputs:
       PASSED: ${{ steps.set-output.outputs.PASSED }}
     steps:
