@@ -15,7 +15,6 @@
     "eslint-plugin-*",
     "prettier-plugin-packagejson",
     "ts-node",
-    "typedoc",
     "typescript-eslint",
     "vite"
   ]

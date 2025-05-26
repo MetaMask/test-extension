@@ -36,7 +36,6 @@ jobs:
             '**/jest.environment.js'
             '**/mocks/'
             '**/test*/'
-            docs/
             e2e/
             merged-packages/
             node_modules

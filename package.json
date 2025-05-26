@@ -32,7 +32,6 @@
   ],
   "scripts": {
     "build": "ts-bridge --project tsconfig.build.json --clean",
-    "build:docs": "typedoc",
     "lint": "yarn lint:eslint && yarn lint:constraints && yarn lint:misc --check && yarn lint:dependencies --check && yarn lint:changelog",
     "lint:changelog": "auto-changelog validate --prettier",
     "lint:constraints": "yarn constraints",
@@ -71,7 +70,6 @@
     "prettier": "^3.3.3",
     "prettier-plugin-packagejson": "^2.5.8",
     "ts-node": "^10.7.0",
-    "typedoc": "^0.26.11",
     "typescript": "~5.7.3",
     "typescript-eslint": "^8.6.0",
     "vite": "^6.2.0",
