@@ -484,13 +484,16 @@ __metadata:
   linkType: hard
 
 "@metamask/json-rpc-engine@npm:^10.0.2, @metamask/json-rpc-engine@npm:^10.0.3":
-  version: 10.0.3
-  resolution: "@metamask/json-rpc-engine@npm:10.0.3"
+  version: 10.2.0
+  resolution: "@metamask/json-rpc-engine@npm:10.2.0"
   dependencies:
     "@metamask/rpc-errors": "npm:^7.0.2"
     "@metamask/safe-event-emitter": "npm:^3.0.0"
-    "@metamask/utils": "npm:^11.1.0"
-  checksum: 10/0558f511aada9bfb13d3b55f6a834543431cc6148a681d3a2885f6171fefbcf092ea4aabc7bbb547de6fdf382cdaf6a73ca5175c63c2d1b6560f763b4b37162e
+    "@metamask/utils": "npm:^11.8.1"
+    "@types/deep-freeze-strict": "npm:^1.1.0"
+    deep-freeze-strict: "npm:^1.1.1"
+    klona: "npm:^2.0.6"
+  checksum: 10/c4d588ee2a27c5cd3b4634dbafebebb193092364e1eec2bf1fef2bd2f2352ab7fa59758067ab53440d8d93b812270bdf2c0e508640614b51e5d06d68a76a37c1
   languageName: node
   linkType: hard
 
@@ -613,6 +616,25 @@ __metadata:
     semver: "npm:^7.5.4"
     uuid: "npm:^9.0.1"
   checksum: 10/7c976268e944b542b5e936bae89f58a50eef58501bd3512944995c6d416cb1a7dd3f712aec8c7ca0969dcee889ab963b815fbc3e863dc80ccf16e9258eaec3ff
+  languageName: node
+  linkType: hard
+
+"@metamask/utils@npm:^11.8.1":
+  version: 11.8.1
+  resolution: "@metamask/utils@npm:11.8.1"
+  dependencies:
+    "@ethereumjs/tx": "npm:^4.2.0"
+    "@metamask/superstruct": "npm:^3.1.0"
+    "@noble/hashes": "npm:^1.3.1"
+    "@scure/base": "npm:^1.1.3"
+    "@types/debug": "npm:^4.1.7"
+    "@types/lodash": "npm:^4.17.20"
+    debug: "npm:^4.3.4"
+    lodash: "npm:^4.17.21"
+    pony-cause: "npm:^2.1.10"
+    semver: "npm:^7.5.4"
+    uuid: "npm:^9.0.1"
+  checksum: 10/efd3aab7f86b4a74d396cf1d5fc76e748ff78906802fdc15ec9ce2d1a9bd6b035e8e036ea93eb6b9ea33782c70adb9000772eb7a5e0164e8e9e2ebb077dca3ab
   languageName: node
   linkType: hard
 
@@ -875,6 +897,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/deep-freeze-strict@npm:^1.1.0":
+  version: 1.1.2
+  resolution: "@types/deep-freeze-strict@npm:1.1.2"
+  checksum: 10/b6e5b5dd68ce74ae5c2c3a43dce9725c79f0d15895c4db90f878e999b9ba553c2bed3af4806ae0f34b6fc003e71adc094d29664654803f85e70db91d1dd440ba
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.7":
   version: 3.7.7
   resolution: "@types/eslint-scope@npm:3.7.7"
@@ -906,6 +935,13 @@ __metadata:
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10/1a3c3e06236e4c4aab89499c428d585527ce50c24fe8259e8b3926d3df4cfbbbcf306cfc73ddfb66cbafc973116efd15967020b0f738f63e09e64c7d260519e7
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:^4.17.20":
+  version: 4.17.20
+  resolution: "@types/lodash@npm:4.17.20"
+  checksum: 10/8cd8ad3bd78d2e06a93ae8d6c9907981d5673655fec7cb274a4d9a59549aab5bb5b3017361280773b8990ddfccf363e14d1b37c97af8a9fe363de677f9a61524
   languageName: node
   linkType: hard
 
@@ -2046,6 +2082,13 @@ __metadata:
   dependencies:
     ms: "npm:^2.1.1"
   checksum: 10/d86fd7be2b85462297ea16f1934dc219335e802f629ca9a69b63ed8ed041dda492389bb2ee039217c02e5b54792b1c51aa96ae954cf28634d363a2360c7a1639
+  languageName: node
+  linkType: hard
+
+"deep-freeze-strict@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "deep-freeze-strict@npm:1.1.1"
+  checksum: 10/06e7a740391a09f97c2ff25c8b5fa2caccbab8de0b53db3d40f6aa49c0955366444304044cde3a9a5e7c95e973961ff9d8d05e225e208d69bbefacc38b41097d
   languageName: node
   linkType: hard
 
@@ -3469,6 +3512,13 @@ __metadata:
   version: 6.0.3
   resolution: "kind-of@npm:6.0.3"
   checksum: 10/5873d303fb36aad875b7538798867da2ae5c9e328d67194b0162a3659a627d22f742fc9c4ae95cd1704132a24b00cae5041fc00c0f6ef937dc17080dc4dbb962
+  languageName: node
+  linkType: hard
+
+"klona@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "klona@npm:2.0.6"
+  checksum: 10/ed7e2c9af58cb646e758e60b75dec24bf72466066290f78c515a2bae23a06fa280f11ff3210c43b94a18744954aa5358f9d46583d5e4c36da073ecc3606355c4
   languageName: node
   linkType: hard
 
